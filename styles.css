@@ -20,7 +20,7 @@ button { font: inherit; }
 .nav-links { display: flex; gap: 30px; align-items: center; font-size: 13px; }
 .nav-links > a:not(.nav-cta) { opacity: .8; }
 .nav-links > a:hover { opacity: 1; }
-.nav-cta { padding: 11px 16px; border: 1px solid rgba(255,255,255,.5); }
+.nav-cta { padding: 11px 25px; border: 1px solid rgba(255,255,255,.5); }
 .menu-button { display: none; border: 0; background: transparent; color: white; cursor: pointer; }
 
 /* Hero — change the filename below when using a differently named image. */
