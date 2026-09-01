@@ -16,11 +16,11 @@ button { font: inherit; }
 /* Navigation */
 .nav { position: fixed; inset: 0 0 auto; z-index: 20; height: 76px; padding: 0 4vw; display: flex; align-items: center; justify-content: space-between; color: white; background: linear-gradient(180deg, rgba(8,15,22,.72), transparent); backdrop-filter: blur(2px); }
 /* EDIT HERE: website name at upper left */
-.wordmark { display: flex; align-items: center; gap: 14px; font-size: 18px; letter-spacing: .01em; }
+.wordmark { display: flex; align-items: center; gap: 14px; font-size: 40px; letter-spacing: .01em; }
 /* EDIT HERE: WL logo text and logo-box dimensions */
 .wordmark span, .footer-mark > span { width: 48px; height: 48px; border: 1px solid rgba(255,255,255,.65); display: grid; place-items: center; font-family: "DM Mono"; font-size: 16px; }
 /* EDIT HERE: Research, Publications, About, and Contact font size */
-.nav-links { display: flex; gap: 34px; align-items: center; font-size: 18px; }
+.nav-links { display: flex; gap: 34px; align-items: center; font-size: 35px; }
 .nav-links > a:not(.nav-cta) { opacity: .8; }
 .nav-links > a:hover { opacity: 1; }
 /* EDIT HERE: Contact button padding */
