@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 1651" role="img" aria-labelledby="title description">
+  <title id="title">Cosmic galaxy outflow</title>
+  <desc id="description">An abstract galaxy with luminous gas flowing from its center into a field of stars.</desc>
+  <defs>
+    <radialGradient id="space" cx="72%" cy="42%" r="76%">
+      <stop offset="0" stop-color="#315e74"/>
+      <stop offset=".38" stop-color="#172f40"/>
+      <stop offset="1" stop-color="#071019"/>
+    </radialGradient>
+    <radialGradient id="core">
+      <stop offset="0" stop-color="#fff8db"/>
+      <stop offset=".12" stop-color="#ffcf89" stop-opacity=".96"/>
+      <stop offset=".38" stop-color="#df6b47" stop-opacity=".62"/>
+      <stop offset="1" stop-color="#d75938" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="wind" x1="0" x2="1">
+      <stop stop-color="#f9b878" stop-opacity="0"/>
+      <stop offset=".45" stop-color="#e77a4e" stop-opacity=".35"/>
+      <stop offset=".7" stop-color="#8cc5cd" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#8cc5cd" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="30"/></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="9"/></filter>
+  </defs>
+
+  <rect width="2048" height="1651" fill="url(#space)"/>
+  <g fill="#f7efe0">
+    <circle cx="111" cy="126" r="2"/><circle cx="225" cy="310" r="3"/><circle cx="355" cy="95" r="1.8"/>
+    <circle cx="510" cy="242" r="2"/><circle cx="657" cy="117" r="3"/><circle cx="812" cy="360" r="1.6"/>
+    <circle cx="958" cy="161" r="2.5"/><circle cx="1104" cy="271" r="1.6"/><circle cx="1250" cy="90" r="2"/>
+    <circle cx="1410" cy="225" r="3"/><circle cx="1578" cy="128" r="1.7"/><circle cx="1770" cy="298" r="2.4"/>
+    <circle cx="1942" cy="104" r="2"/><circle cx="1855" cy="505" r="1.8"/><circle cx="1635" cy="420" r="2.5"/>
+    <circle cx="1492" cy="610" r="1.7"/><circle cx="1950" cy="746" r="3"/><circle cx="1720" cy="880" r="2"/>
+    <circle cx="190" cy="720" r="2.5"/><circle cx="390" cy="562" r="1.6"/><circle cx="608" cy="780" r="2"/>
+    <circle cx="133" cy="1050" r="3"/><circle cx="340" cy="1240" r="2"/><circle cx="590" cy="1450" r="1.8"/>
+    <circle cx="887" cy="1320" r="2.7"/><circle cx="1170" cy="1510" r="2"/><circle cx="1440" cy="1360" r="3"/>
+    <circle cx="1720" cy="1510" r="1.8"/><circle cx="1950" cy="1290" r="2.4"/>
+  </g>
+
+  <g transform="translate(1310 835) rotate(-17)">
+    <ellipse rx="520" ry="178" fill="none" stroke="#b6d8dc" stroke-opacity=".12" stroke-width="38" filter="url(#blur)"/>
+    <ellipse rx="410" ry="106" fill="none" stroke="#f2b57b" stroke-opacity=".2" stroke-width="42" filter="url(#blur)"/>
+    <ellipse rx="315" ry="72" fill="none" stroke="#d8d7c9" stroke-opacity=".32" stroke-width="22"/>
+    <circle r="215" fill="url(#core)" filter="url(#blur)"/>
+    <circle r="115" fill="url(#core)"/>
+    <circle r="18" fill="#fff8e9" filter="url(#glow)"/>
+    <path d="M0-25 C-280-190-515-420-820-660 L-455-125 C-260-66-120-34 0 0Z" fill="url(#wind)" filter="url(#blur)"/>
+    <path d="M0 25 C280 190 515 420 820 660 L455 125 C260 66 120 34 0 0Z" fill="url(#wind)" filter="url(#blur)"/>
+  </g>
+
+  <path d="M1030 980C1320 805 1550 778 1830 825" fill="none" stroke="#f7d39e" stroke-opacity=".2" stroke-width="4"/>
+</svg>
