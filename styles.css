@@ -15,31 +15,41 @@ button { font: inherit; }
 
 /* Navigation */
 .nav { position: fixed; inset: 0 0 auto; z-index: 20; height: 76px; padding: 0 4vw; display: flex; align-items: center; justify-content: space-between; color: white; background: linear-gradient(180deg, rgba(8,15,22,.72), transparent); backdrop-filter: blur(2px); }
-.wordmark { display: flex; align-items: center; gap: 13px; font-size: 30px; letter-spacing: .01em; }
-.wordmark span, .footer-mark > span { width: 44px; height: 44px; border: 1px solid rgba(255,255,255,.65); display: grid; place-items: center; font-family: "DM Mono"; font-size: 14px; }
-.nav-links { display: flex; gap: 40px; align-items: center; font-size: 30px; }
+/* EDIT HERE: website name at upper left */
+.wordmark { display: flex; align-items: center; gap: 14px; font-size: 18px; letter-spacing: .01em; }
+/* EDIT HERE: WL logo text and logo-box dimensions */
+.wordmark span, .footer-mark > span { width: 48px; height: 48px; border: 1px solid rgba(255,255,255,.65); display: grid; place-items: center; font-family: "DM Mono"; font-size: 16px; }
+/* EDIT HERE: Research, Publications, About, and Contact font size */
+.nav-links { display: flex; gap: 34px; align-items: center; font-size: 18px; }
 .nav-links > a:not(.nav-cta) { opacity: .8; }
 .nav-links > a:hover { opacity: 1; }
-.nav-cta { padding: 13px 24px; border: 1px solid rgba(255,255,255,.5); }
-.menu-button { display: none; padding: 11px 14px; border: 0; background: transparent; color: white; cursor: pointer; font-size: 16px; }
+/* EDIT HERE: Contact button padding */
+.nav-cta { padding: 14px 26px; border: 1px solid rgba(255,255,255,.5); }
+/* EDIT HERE: mobile Menu button font size and padding */
+.menu-button { display: none; padding: 12px 16px; border: 0; background: transparent; color: white; cursor: pointer; font-size: 18px; }
 
 /* Hero — change the filename below when using a differently named image. */
 .hero { min-height: 760px; height: 100vh; position: relative; color: white; display: flex; align-items: center; overflow: hidden; }
 .hero-image { position: absolute; inset: 0; background: url("hero.jpg") center / cover no-repeat; transform: scale(1.02); }
 .hero-shade { position: absolute; inset: 0; background: linear-gradient(90deg,rgba(6,13,20,.94) 0%,rgba(8,17,25,.78) 43%,rgba(4,10,16,.18) 76%), linear-gradient(0deg,rgba(4,10,16,.62),transparent 45%); }
 .hero-content { position: relative; width: min(1280px, 92vw); margin: 55px auto 0; }
-.eyebrow, .section-index { font-family: "DM Mono"; text-transform: uppercase; letter-spacing: .14em; font-size: 12px; }
+/* EDIT HERE: small uppercase eyebrow text above the heading */
+.eyebrow, .section-index { font-family: "DM Mono"; text-transform: uppercase; letter-spacing: .14em; font-size: 14px; }
 .eyebrow { display: flex; align-items: center; gap: 10px; }
 .eyebrow span { width: 28px; height: 1px; background: currentColor; }
 .light { color: rgba(255,255,255,.7); }
-.hero h1 { margin: 28px 0 32px; max-width: 900px; font-size: clamp(62px, 7.6vw, 116px); line-height: .94; letter-spacing: -.055em; font-weight: 600; }
+/* EDIT HERE: main hero heading size and line spacing */
+.hero h1 { margin: 30px 0 36px; max-width: 980px; font-size: clamp(70px, 8.2vw, 128px); line-height: .94; letter-spacing: -.055em; font-weight: 600; }
 .hero h1 em { font-family: Newsreader, serif; font-weight: 400; color: #ef9e72; }
-.hero-copy { max-width: 620px; margin: 0 0 36px; font-size: 19px; line-height: 1.75; color: rgba(255,255,255,.78); }
+/* EDIT HERE: introductory paragraph size and line spacing */
+.hero-copy { max-width: 680px; margin: 0 0 40px; font-size: 22px; line-height: 1.7; color: rgba(255,255,255,.8); }
 .hero-actions { display: flex; gap: 12px; }
-.button { display: inline-flex; align-items: center; gap: 12px; padding: 16px 24px; font-size: 16px; font-weight: 500; }
+/* EDIT HERE: Explore and View Publications button text and padding */
+.button { display: inline-flex; align-items: center; gap: 12px; padding: 18px 28px; font-size: 18px; font-weight: 500; }
 .button.primary { background: var(--warm); color: white; }
 .button.ghost { border: 1px solid rgba(255,255,255,.4); }
-.hero-meta { position: absolute; bottom: 28px; right: 4vw; display: flex; gap: 28px; font-family: "DM Mono"; font-size: 10px; text-transform: uppercase; letter-spacing: .1em; color: rgba(255,255,255,.62); }
+/* EDIT HERE: University, location, and research metadata at bottom */
+.hero-meta { position: absolute; bottom: 30px; right: 4vw; display: flex; gap: 30px; font-family: "DM Mono"; font-size: 12px; text-transform: uppercase; letter-spacing: .1em; color: rgba(255,255,255,.65); }
 
 /* Shared sections */
 .section-pad { padding: 110px max(4vw, calc((100vw - 1280px) / 2)); }
@@ -120,9 +130,12 @@ footer > p { font-family: Newsreader, serif; font-style: italic; color: #e99c73;
   .nav-links { position: absolute; top: 68px; left: 0; right: 0; background: #0b1720; padding: 24px 4vw; flex-direction: column; align-items: stretch; display: none; }
   .nav-links.open { display: flex; }
   .hero { min-height: 720px; }
-  .nav-links { font-size: 16px; }
-  .hero h1 { font-size: 54px; line-height: .98; letter-spacing: -.045em; }
-  .hero-copy { font-size: 17px; line-height: 1.7; }
+  /* EDIT HERE: tablet navigation font size */
+  .nav-links { font-size: 18px; }
+  /* EDIT HERE: tablet hero heading */
+  .hero h1 { font-size: 60px; line-height: .98; letter-spacing: -.045em; }
+  /* EDIT HERE: tablet introductory paragraph */
+  .hero-copy { font-size: 19px; line-height: 1.7; }
   .hero-meta { left: 4vw; right: auto; flex-wrap: wrap; gap: 12px; }
   .section-pad { padding-top: 78px; padding-bottom: 78px; }
   .statement-grid, .feature-grid, .contact-grid { grid-template-columns: 1fr; }
@@ -140,9 +153,12 @@ footer > p { font-family: Newsreader, serif; font-style: italic; color: #e99c73;
 }
 
 @media (max-width: 480px) {
-  .hero h1 { font-size: 46px; line-height: 1; }
-  .hero-copy { font-size: 16px; }
-  .button { font-size: 15px; padding: 15px 20px; }
+  /* EDIT HERE: phone hero heading */
+  .hero h1 { font-size: 52px; line-height: 1; }
+  /* EDIT HERE: phone introductory paragraph */
+  .hero-copy { font-size: 18px; }
+  /* EDIT HERE: phone hero buttons */
+  .button { font-size: 17px; padding: 16px 22px; }
   .hero-actions { flex-direction: column; align-items: flex-start; }
   .stats { gap: 16px; }
   .stats strong { font-size: 18px; }
