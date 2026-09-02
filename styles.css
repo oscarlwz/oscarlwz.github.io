@@ -29,39 +29,44 @@ button { font: inherit; }
 .menu-button { display: none; padding: 12px 16px; border: 0; background: transparent; color: white; cursor: pointer; font-size: 18px; }
 
 
-/* Featured figure above the hero text */
+/* Seamless figure above the hero text */
 .hero-top-figure {
-  position: relative;
-  width: min(420px, 55vw);
-  margin: 0 0 30px;
-  padding: 10px;
-  background: rgba(8, 20, 30, 0.72);
-  border: 1px solid rgba(255, 255, 255, 0.28);
-  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
-  backdrop-filter: blur(8px);
-}
-
-.hero-top-figure::after {
-  content: "";
-  position: absolute;
-  bottom: -1px;
-  left: -1px;
-  width: 38%;
-  height: 3px;
-  background: var(--warm);
+  width: min(430px, 55vw);
+  margin: 0 0 28px;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
 }
 
 .hero-top-figure img {
   display: block;
   width: 100%;
-  max-height: 230px;
+  height: auto;
+  max-height: 240px;
   object-fit: contain;
-  background: rgba(255, 255, 255, 0.04);
+
+  /* Soft integration with the hero background */
+  filter: drop-shadow(0 14px 24px rgba(0, 0, 0, 0.28));
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    black 8%,
+    black 88%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    black 8%,
+    black 88%,
+    transparent 100%
+  );
 }
 
 .hero-top-figure figcaption {
-  padding: 10px 4px 2px;
-  color: rgba(255, 255, 255, 0.68);
+  margin-top: 5px;
+  color: rgba(255, 255, 255, 0.55);
   font-family: "DM Mono";
   font-size: 10px;
   letter-spacing: 0.12em;
@@ -70,8 +75,8 @@ button { font: inherit; }
 
 @media (max-width: 800px) {
   .hero-top-figure {
-    width: min(360px, 82vw);
-    margin-bottom: 24px;
+    width: min(360px, 80vw);
+    margin-bottom: 22px;
   }
 
   .hero-top-figure img {
