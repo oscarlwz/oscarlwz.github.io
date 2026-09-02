@@ -5,6 +5,7 @@
   --sand: #d8b776;
   --blue: #173a53;
   --line: rgba(16, 24, 32, 0.16);
+  --brand-column-width: 210px;
 }
 
 * { box-sizing: border-box; }
@@ -16,7 +17,8 @@ button { font: inherit; }
 /* Navigation */
 .nav { position: fixed; inset: 0 0 auto; z-index: 20; height: 76px; padding: 0 4vw; display: flex; align-items: center; justify-content: space-between; color: white; background: linear-gradient(180deg, rgba(8,15,22,.72), transparent); backdrop-filter: blur(2px); }
 /* EDIT HERE: website name at upper left */
-.wordmark { display: flex; align-items: center; gap: 40px; font-size: 40px; letter-spacing: .01em; }
+.wordmark { display: flex; align-items: center; gap: 40px; font-size: 40px; letter-spacing: .01em; width: var(--brand-column-width);
+  justify-content: center;}
 /* EDIT HERE: WL logo text and logo-box dimensions */
 .wordmark span, .footer-mark > span { width: 48px; height: 48px; border: 1px solid rgba(255,255,255,.65); display: grid; place-items: center; font-family: "DM Mono"; font-size: 16px; }
 /* EDIT HERE: Research, Publications, About, and Contact font size */
@@ -31,9 +33,11 @@ button { font: inherit; }
 
 /* Seamless figure above the hero text */
 .hero-top-figure {
-  width: min(430px, 55vw);
-  margin: 0 0 28px;
+  width: var(--brand-column-width);
+  margin: 0 0 24px;
   padding: 0;
+  display: flex;
+  justify-content: center;
   background: transparent;
   border: 0;
   box-shadow: none;
@@ -41,11 +45,10 @@ button { font: inherit; }
 
 .hero-top-figure img {
   display: block;
-  width: 100%;
+  width: 170px;
   height: auto;
-  max-height: 240px;
+  max-height: 190px;
   object-fit: contain;
-
   /* Soft integration with the hero background */
   filter: drop-shadow(0 14px 24px rgba(0, 0, 0, 0.28));
   -webkit-mask-image: linear-gradient(
